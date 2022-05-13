@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            {{#if_eq demoType "store"}}
+            "@store": ["src/lib/Store.js"],
+            {{/if_eq}}
+            "@app": ["src/lib/App.js"]
+        }
+    }
+}
